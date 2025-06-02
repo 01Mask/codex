@@ -1,0 +1,30 @@
+[
+  {
+    "id": "T001",
+    "name": "Alice Wonderland",
+    "role": "Lead IT Consultant",
+    "imagePlaceholder": "https://placekitten.com/300/300?image=1",
+    "bio": "Alice has over 10 years of experience in IT consulting, specializing in network infrastructure and cybersecurity. She is passionate about helping businesses leverage technology for growth."
+  },
+  {
+    "id": "T002",
+    "name": "Bob The Builder",
+    "role": "Senior Web Developer",
+    "imagePlaceholder": "https://placekitten.com/300/300?image=2",
+    "bio": "Bob is a skilled web developer with expertise in modern JavaScript frameworks and backend technologies. He focuses on creating seamless and engaging user experiences."
+  },
+  {
+    "id": "T003",
+    "name": "Carol Danvers",
+    "role": "Cyber Security Analyst",
+    "imagePlaceholder": "https://placekitten.com/300/300?image=3",
+    "bio": "Carol is dedicated to protecting client assets from cyber threats. She has a strong background in threat intelligence, incident response, and security auditing."
+  },
+  {
+    "id": "T004",
+    "name": "David Copperfield",
+    "role": "Support Technician",
+    "imagePlaceholder": "https://placekitten.com/300/300?image=4",
+    "bio": "David is our go-to expert for technical support and IT training. He excels at troubleshooting complex issues and explaining technical concepts in an easy-to-understand manner."
+  }
+]

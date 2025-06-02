@@ -1,0 +1,20 @@
+[
+  {
+    "id": "TS001",
+    "clientName": "John Doe, CEO of Innovatech",
+    "feedback": "Codex IT Services transformed our outdated network infrastructure into a modern, efficient system. Their team was professional, knowledgeable, and completed the project on time. Highly recommended!",
+    "projectType": "Network Overhaul"
+  },
+  {
+    "id": "TS002",
+    "clientName": "Jane Smith, Owner of Smith's Bakery",
+    "feedback": "The new website developed by Codex IT is fantastic! It's user-friendly, looks great, and has significantly boosted our online orders. Their web development team understood our needs perfectly.",
+    "projectType": "Web Development"
+  },
+  {
+    "id": "TS003",
+    "clientName": "Robert Jones, Operations Manager at SecureLogix",
+    "feedback": "We recently engaged Codex for a comprehensive cybersecurity audit and implementation of new security measures. Their expertise and attention to detail have given us much-needed peace of mind.",
+    "projectType": "Cyber Security Audit"
+  }
+]

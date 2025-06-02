@@ -1,0 +1,44 @@
+[
+  {
+    "id": "P001",
+    "name": "Computer Accessories",
+    "description": "A wide range of computer accessories including keyboards, mice, monitors, cables, and more to enhance your computing experience.",
+    "category": "Accessories",
+    "imagePlaceholder": "images/products/accessories.jpg"
+  },
+  {
+    "id": "P002",
+    "name": "PC Desktops",
+    "description": "Reliable and powerful desktop computers suitable for business, gaming, or personal use, with various configurations available.",
+    "category": "Computers",
+    "imagePlaceholder": "images/products/desktops.jpg"
+  },
+  {
+    "id": "P003",
+    "name": "Printers",
+    "description": "High-quality printers for home and office use, including inkjet, laser, and multifunction printers from top brands.",
+    "category": "Peripherals",
+    "imagePlaceholder": "images/products/printers.jpg"
+  },
+  {
+    "id": "P004",
+    "name": "PBX Systems",
+    "description": "Advanced Private Branch Exchange (PBX) systems for efficient and professional business communication and call management.",
+    "category": "Networking",
+    "imagePlaceholder": "images/products/pbx.jpg"
+  },
+  {
+    "id": "P005",
+    "name": "Hikvision CCTV Cameras",
+    "description": "State-of-the-art Hikvision CCTV cameras offering high-resolution video surveillance for robust security monitoring.",
+    "category": "Surveillance",
+    "imagePlaceholder": "images/products/hikvision_cctv.jpg"
+  },
+  {
+    "id": "P006",
+    "name": "Dahua CCTV Cameras",
+    "description": "Dahua CCTV cameras known for their advanced technology and reliability, providing excellent surveillance solutions.",
+    "category": "Surveillance",
+    "imagePlaceholder": "images/products/dahua_cctv.jpg"
+  }
+]

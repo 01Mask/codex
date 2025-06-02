@@ -1,0 +1,62 @@
+[
+  {
+    "id": "S001",
+    "name": "Computer Networking",
+    "description": "Design, implementation, and management of robust and scalable network infrastructures to ensure seamless connectivity and communication for your business.",
+    "icon": "fas fa-network-wired"
+  },
+  {
+    "id": "S002",
+    "name": "PC Sales",
+    "description": "Provision of high-quality desktop computers, laptops, and peripherals tailored to meet your business or personal requirements, ensuring optimal performance.",
+    "icon": "fas fa-laptop"
+  },
+  {
+    "id": "S003",
+    "name": "Cyber Security",
+    "description": "Comprehensive security solutions including threat assessment, firewall management, and data protection to safeguard your digital assets against cyber threats.",
+    "icon": "fas fa-shield-alt"
+  },
+  {
+    "id": "S004",
+    "name": "Web Development",
+    "description": "Creating modern, responsive, and user-friendly websites that enhance your online presence, drive business growth, and deliver a great user experience.",
+    "icon": "fas fa-code"
+  },
+  {
+    "id": "S005",
+    "name": "Software Development",
+    "description": "Custom software solutions designed to streamline your operations, improve efficiency, and solve unique business challenges with tailored applications.",
+    "icon": "fas fa-cogs"
+  },
+  {
+    "id": "S006",
+    "name": "Surveillance & Security Analysis",
+    "description": "Advanced CCTV and surveillance systems coupled with expert security analysis to ensure physical safety, asset protection, and peace of mind.",
+    "icon": "fas fa-video"
+  },
+  {
+    "id": "S007",
+    "name": "IT Training",
+    "description": "Professional training programs for individuals and teams to enhance IT skills, covering software, security, system administration, and new technologies.",
+    "icon": "fas fa-chalkboard-teacher"
+  },
+  {
+    "id": "S008",
+    "name": "VoIP Services",
+    "description": "Reliable and cost-effective Voice over IP solutions for crystal-clear communication, including setup, configuration, and support for your business needs.",
+    "icon": "fas fa-phone-volume"
+  },
+  {
+    "id": "S009",
+    "name": "Access Control Systems",
+    "description": "Implementation of modern access control systems to secure your premises, manage entry permissions, and monitor access for enhanced security.",
+    "icon": "fas fa-id-card"
+  },
+  {
+    "id": "S010",
+    "name": "Biometric Systems",
+    "description": "Advanced biometric solutions for identification and authentication, providing an extra layer of security for sensitive areas and data.",
+    "icon": "fas fa-fingerprint"
+  }
+]
