@@ -1,0 +1,545 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for colors and fonts */
+:root {
+    --primary-color: #005A9C; /* Professional Blue */
+    --secondary-color: #003366; /* Darker Blue */
+    --accent-color: #00AEEF; /* Light Blue Accent */
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    --light-gray: #f4f4f4;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 16px; /* Base font size for rem unit calculations */
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding-top: 70px; /* Add padding for fixed header */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 0 20px;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header is above other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px; /* Ensure padding is consistent */
+    padding-right: 20px;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 25px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0; /* Add some padding for easier clicking */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active { /* Style for active link */
+    color: var(--accent-color);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 90, 156, 0.8), rgba(0, 51, 102, 0.8)), url('https://via.placeholder.com/1500x800.png?text=Modern+IT+Infrastructure') no-repeat center center/cover; /* Placeholder image */
+    color: #fff;
+    padding: 6rem 0; /* Increased padding */
+    text-align: center;
+    min-height: calc(70vh - 70px); /* Adjust for fixed header height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-family: var(--heading-font);
+    font-size: 3rem; /* Larger headline */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 600px; /* Constrain paragraph width */
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff; /* White text for better contrast */
+    padding: 0.9rem 1.8rem; /* Slightly larger button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: var(--heading-font);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+section {
+    padding: 4rem 0; /* Increased padding for sections */
+    /* text-align: center; Let container handle this or apply specifically */
+}
+
+section .container { /* Ensure sections use the container correctly */
+    text-align: center; /* Center text content within sections */
+}
+
+
+section#services {
+    background-color: var(--light-gray); /* Alternate background for services */
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem; /* Consistent heading size */
+    margin-bottom: 2.5rem; /* More space below heading */
+    color: var(--primary-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between service items */
+    text-align: left; /* Align text to left within service boxes */
+}
+
+.service {
+    background: var(--background-color);
+    padding: 2rem; /* More padding within service boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text for items like icon */
+}
+
+.service-icon {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.service h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-bottom: 1rem; /* Space below service title */
+    font-size: 1.5rem;
+    text-align: center; /* Ensure heading is centered if not inheriting */
+}
+
+.service p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: left; /* Keep paragraph text left-aligned for readability */
+}
+
+#about, #contact {
+    padding: 4rem 0; /* Consistent padding with other sections */
+}
+
+#about .container p, #contact .container p { /* Target p inside container for these sections */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem; 
+    font-size: 1.1rem;
+    text-align: left; /* Or center if preferred, but often left is more readable for paragraphs */
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem 0; /* Increased padding */
+    background: var(--secondary-color); /* Darker footer */
+    color: #fff;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem;
+}
+
+/* Contact Page Specific Styles */
+.contact-page-main {
+    padding: 2rem 0; /* Reduced padding compared to homepage sections for a more focused feel */
+    background-color: var(--light-gray); /* Light background for the contact page content area */
+}
+
+.contact-page-main .container h2 { /* Style for "Get In Touch" heading */
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-page-main .container > p { /* Style for the intro paragraph */
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem; /* Space between form and details */
+    background-color: var(--background-color); /* White background for the content box */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    flex: 2; /* Form takes more space */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+.contact-details {
+    flex: 1; /* Details take less space */
+    min-width: 280px; /* Minimum width before wrapping */
+    background-color: var(--light-gray); /* Slightly different background for details section */
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize, disable horizontal */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 90, 156, 0.3);
+}
+
+.contact-form .cta-button { /* Specific styling for submit button if needed, inherits most from .cta-button */
+    width: 100%;
+    padding: 0.9rem 0; /* Adjust padding for full width */
+}
+
+.contact-details h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-details h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.contact-details p i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    width: 20px; /* Ensure icons align nicely */
+    text-align: center;
+}
+
+.contact-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+/* Responsive Adjustments */
+
+/* Tablet and larger phone landscape */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Adjust for potentially shorter header if logo/nav stacks nicely */
+    }
+
+    header {
+        padding: 0.8rem 0;
+    }
+    
+    header .container {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
+
+    header h1 {
+        margin-bottom: 0.8rem; /* More space when stacked */
+        font-size: 1.6rem; /* Slightly smaller title */
+    }
+
+    nav ul {
+        text-align: center; /* Center the nav items */
+    }
+    
+    nav ul li {
+        margin: 0 10px; /* Reduce margin for smaller screens */
+    }
+
+    .hero {
+        padding: 3rem 0;
+        min-height: calc(60vh - 60px); /* Adjust min-height */
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        padding: 0 15px; /* Add padding to prevent text touching edges */
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    section h2 { /* This will also affect contact page h2 if not overridden */
+        font-size: 2rem;
+    }
+    /* Ensure contact page specific h2 is maintained or adjusted */
+    .contact-page-main .container h2 {
+        font-size: 2rem; /* Match other section titles on this breakpoint */
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack services on smaller screens */
+        gap: 1.5rem;
+    }
+
+    .service {
+        padding: 1.5rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0 15px; /* Adjust container padding */
+    }
+
+    #about .container p, 
+    #contact .container p { /* This was for homepage sections, adjust for contact page main intro p */
+        font-size: 1rem; 
+    }
+    .contact-page-main .container > p {
+        font-size: 1rem;
+    }
+
+    .contact-content-wrapper {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .contact-form {
+        margin-bottom: 1.5rem; /* Add space if it wraps above details */
+    }
+
+}
+
+/* Smaller phones portrait */
+@media (max-width: 480px) {
+    html {
+        font-size: 15px; /* Slightly reduce base font size for better fit */
+    }
+
+    body {
+        padding-top: 50px; /* Further adjust for header */
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    header .container {
+       /* Already column from 768px */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Further reduce title size */
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 0.5rem 0; /* Adjust margin for vertical stacking */
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 8px 5px; /* Ensure clickable area */
+    }
+
+    .hero {
+        padding: 2.5rem 0;
+        min-height: calc(50vh - 50px);
+    }
+
+    .hero h2 {
+        font-size: 1.8rem; /* Further reduce hero headline */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Further reduce hero paragraph */
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    section { /* General section padding */
+        padding: 2.5rem 0;
+    }
+    .contact-page-main { /* Specific padding for contact page */
+         padding: 1.5rem 0;
+    }
+
+    section h2 { /* General section heading */
+        font-size: 1.8rem; 
+        margin-bottom: 2rem;
+    }
+    .contact-page-main .container h2 { /* Contact page heading */
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .container {
+        width: 95%; /* Maximize width on very small screens */
+        padding: 0 10px;
+    }
+
+    #about .container p,
+    #contact .container p { /* Homepage sections */
+        font-size: 0.95rem;
+    }
+    .contact-page-main .container > p { /* Contact page intro */
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-content-wrapper {
+        padding: 1rem; /* Further reduce padding */
+        gap: 1.5rem;
+    }
+
+    .contact-details p {
+        font-size: 0.9rem;
+    }
+    .contact-details p i {
+        margin-right: 0.5rem;
+    }
+
+
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
