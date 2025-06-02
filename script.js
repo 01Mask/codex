@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Load dynamic content
+    // Load dynamic content - Test 4: All sections active
     if (document.querySelector('#services .services-grid')) loadServices();
     if (document.getElementById('products-grid')) loadProducts();
     if (document.getElementById('team-grid')) loadTeam();
